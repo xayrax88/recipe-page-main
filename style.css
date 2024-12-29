@@ -81,6 +81,7 @@ main {
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
+  height: 100%;
   width: 730px;
   /* height: auto; */
   padding: 3rem;
@@ -95,6 +96,14 @@ img {
 h1 {
   font-family: "Young Serif", Arial, Helvetica, sans-serif;
   color: var(--color-Stone-900);
+  font-weight: var(--font-weight-600);
+  text-align: left;
+  width: 100%;
+  margin: 1rem 0;
+}
+h2 {
+  font-family: "Young Serif", Arial, Helvetica, sans-serif;
+  color: var(--color-Brown-800);
   font-weight: var(--font-weight-600);
   text-align: left;
   width: 100%;
@@ -115,7 +124,8 @@ p {
   font-weight: var(--font-weight-400);
   color: var(--color-Stone-600);
 }
-ul {
+ul,
+ol {
   list-style-position: inside;
   padding-left: 1rem;
   margin: 0;
@@ -125,6 +135,7 @@ li {
   font-weight: var(--font-weight-400);
   color: var(--color-Stone-600);
   margin-bottom: 0.25rem;
+  padding: 0.25rem;
 }
 
 footer {
@@ -143,6 +154,13 @@ section.preparation-time {
   margin-top: 2rem;
 }
 
+section.ingredients,
+section.instructions {
+  border-bottom: solid 1px var(--color-Stone-150);
+  height: auto;
+  width: 100%;
+  padding: 1.5rem 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
