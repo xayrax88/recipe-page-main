@@ -60,7 +60,41 @@ The designs were created to the following widths:
   --font-weight-600: 600;
   --font-weight-700: 700;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-Stone-100);
+}
 
+main {
+  background-color: var(--color-White);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 730px;
+  height: auto;
+  padding: 2.4rem;
+  margin: auto;
+}
+img {
+  height: 300px;
+  width: 650px;
+  border-radius: 1rem;
+}
+h1 {
+  font-family: "Young Serif";
+  color: var(--color-Stone-900);
+}
 footer {
   color: (--color-White);
   position: relative;
