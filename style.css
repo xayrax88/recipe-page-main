@@ -119,23 +119,30 @@ h3 {
 span {
   font-weight: var(--font-weight-700);
 }
-p {
+p,
+td {
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   font-weight: var(--font-weight-400);
   color: var(--color-Stone-600);
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
 }
+
 ul,
 ol {
   list-style-position: inside;
   padding-left: 1rem;
   margin: 0;
 }
-li {
+
+li,
+td {
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   font-weight: var(--font-weight-400);
   color: var(--color-Stone-600);
   margin-bottom: 0.25rem;
   padding: 0.25rem;
+  line-height: 1.5rem;
 }
 
 footer {
@@ -161,6 +168,18 @@ section.instructions {
   width: 100%;
   padding: 1.5rem 0;
 }
+section.nutrition {
+  height: auto;
+  width: 100%;
+  padding: 1.5rem 0;
+  display: grid;
+  grid-column: auto / span 2;
+}
+
+td {
+  border-bottom: solid 1px black;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
